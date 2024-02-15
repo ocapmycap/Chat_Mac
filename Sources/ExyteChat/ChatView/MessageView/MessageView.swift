@@ -33,7 +33,7 @@ struct MessageView: View {
     static let horizontalStatusPadding: CGFloat = 8
     static let horizontalBubblePadding: CGFloat = 70
 
-    let font =  UIFont.systemFont(ofSize: 20)
+    let font =  UIFont.systemFont(ofSize: 30)
     
     enum DateArrangment {
         case hstack, vstack, overlay
