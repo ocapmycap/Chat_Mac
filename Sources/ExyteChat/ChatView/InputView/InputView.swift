@@ -225,11 +225,11 @@ struct InputView: View {
                         .frame(width: 2)
                     VStack(alignment: .leading) {
                         Text("Reply to \(message.user.name)")
-                            .font(.caption2)
+                            .font(.body)
                             .foregroundColor(theme.colors.buttonBackground)
                         if !message.text.isEmpty {
                             textView(message.text)
-                                .font(.caption2)
+                                .font(.body)
                                 .lineLimit(1)
                                 .foregroundColor(theme.colors.textLightContext)
                         }
@@ -404,7 +404,7 @@ struct InputView: View {
         Text(DateFormatter.timeString(Int(viewModel.attachments.recording?.duration ?? 0)))
             .foregroundColor(theme.colors.textLightContext)
             .opacity(0.6)
-            .font(.caption2)
+            .font(.body)
             .monospacedDigit()
             .padding(.trailing, 12)
     }
@@ -413,7 +413,7 @@ struct InputView: View {
         Text(DateFormatter.timeString(Int(recordingPlayer.secondsLeft)))
             .foregroundColor(theme.colors.textLightContext)
             .opacity(0.6)
-            .font(.caption2)
+            .font(.body)
             .monospacedDigit()
             .padding(.trailing, 12)
     }
