@@ -208,7 +208,7 @@ struct MessageView: View {
     @ViewBuilder
     func textWithTimeView(_ message: Message) -> some View {
         let messageView = MessageTextView(text: message.text, messageUseMarkdown: messageUseMarkdown)
-        .font(.system(size: 20))
+        .font(.system(size: 30))
         .fixedSize(horizontal: false, vertical: true)
             .padding(.horizontal, MessageView.horizontalTextPadding)
         .task {
